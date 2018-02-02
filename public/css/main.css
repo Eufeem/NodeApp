@@ -1,0 +1,156 @@
+@charset "ISO-8859-1";
+
+/* ---------- FONT APP ---------- */
+html {  font-size: 62.5% !important; }
+body {
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-size: 1.5em !important; /* currently ems cause chrome bug misinterpreting rems on body element */
+ 	line-height: 1.6 !important;
+  	font-weight: 400 !important;
+}
+
+
+/* ---------- MAIN BACKGROUNDS ---------- */
+.header {
+	background-color: #00695c;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+}
+
+
+/* ---------- NAVBAR STYLES ---------- */
+.navbar {
+    background-color: transparent !important;
+    background: transparent !important;
+    border-color: transparent !important;
+    opacity: 0.9 !important;
+    border: 0;
+    border-radius: 0;
+    height: .9px;
+}
+
+.navbar > .container > .navbar-header > a {
+    color: #fff !important;
+}
+
+.navbar-inverse .navbar-nav>li > a {
+    color: #fff !important;
+    transition-duration: .5s;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+
+/* ---------- CAROUSEL ---------- */
+.carousel-inner > .item, .active {
+    color: #000;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none !important;
+    color: #4db6ac;
+}
+
+.carousel-indicators li {
+    border-color: #ccc !important;
+}
+
+.carousel-indicators li.active {
+    background-color: #4db6ac;
+}
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    margin: 70px 0;
+}
+
+.bg-white {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+
+/* ---------- HEADERS ---------- */
+h1, h2, h3, h4, h5 {
+	text-align: center;
+}
+
+
+/* ---------- TEXT ---------- */
+.header-text {
+	margin-bottom: 100px !important;
+}
+
+.text-white {
+	color: #fff !important;
+}
+
+.text-grey {
+	color: #ccc !important;
+}
+
+
+/* ---------- IMG ---------- */
+img {
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+.btn-transparency {
+	border-radius: 0px !important; 
+	background-color: transparent !important;
+    background: transparent !important;	
+    border-color: #fff !important;
+    color: #fff !important;
+    transition-duration: .5s;
+}
+.btn-transparency:hover {
+ 	border-color: #4db6ac !important;
+    color: #4db6ac !important;
+}
+
+.btn-transparency2 {
+	border-radius: 0px !important; 
+	background-color: transparent !important;
+    background: transparent !important;	
+    border-color: #616161 !important;
+    color: #616161 !important;
+    transition-duration: .5s;
+}
+.btn-transparency2:hover {
+	border-color: #4db6ac !important;
+    color: #4db6ac !important;
+}
+
+
+/*---------- COLUMNS PADDING ---------- */
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    width: 100%;
+	padding-left: 25px !important;
+	padding-right: 25px !important;
+}
+
+
+/* ---------- WIDTH OF ELEMENT HR ---------- */
+hr {
+	width: 250px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+	margin-top: 70px;
+}

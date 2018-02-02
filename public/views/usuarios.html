@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ESV</title>
+    <meta name="theme-color" content="#000" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <link rel="shortcut icon" href="image/coding.png">
+    <link rel="stylesheet" href="css/admin.css">
+
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+
+<body class="hold-transition skin-black-light sidebar-mini">
+    <div class="wrapper">
+
+        <!-- HEADER -->
+        <!-- ---------- NAVBAR ---------- -->
+        <header class="main-header">
+
+            <a href="#" class="logo">
+            <span class="logo-mini">ESV</span>
+            <span class="logo-lg">ESV</span>
+        </a>
+
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Sidebar toggle button-->
+            <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                <span class="sr-only">Toggle navigation</span>
+            </a>
+            <!-- Navbar Right Menu -->
+            <div class="navbar-custom-menu">
+                <ul class="nav navbar-nav">
+                    <!-- Messages: style can be found in dropdown.less-->
+                    <!-- /.messages-menu -->
+                    <!-- User Account Menu -->
+                    <li class="dropdown user user-menu">
+                        <!-- Menu Toggle Button -->
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <!-- The user image in the navbar-->
+                            <img src="image/ardilla.png" class="user-image" alt="User Image">
+                            <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                            <span class="hidden-xs">Administrador</span>
+                        </a>
+                        <ul class="dropdown-menu" id="profile">
+                            <!-- The user image in the menu -->
+                            <li class="user-header">
+                                <img src="image/ardilla.png" class="img-circle" alt="User Image">
+
+                                <p>
+                                    Administrador - Administrador
+                                    <small>Miembro desde Julio. 2017</small>
+                                </p>
+                            </li>
+                            <!-- Menu Body -->
+                            <li class="user-body">
+                                <!-- /.row -->
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+
+                                <center>
+                                    <div class="pull-right">
+                                        <center><a href="loggin.html" class="btn btn-default btn-flat">Cerrar sesión</a></center>
+                                    </div>
+                                </center>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Control Sidebar Toggle Button -->
+                    <li>
+                        <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+        </header>
+        <!-- ---------- /NAVBAR ---------- -->
+        <!-- / HEADER -->
+
+
+        <!-- ---------- SIDEBAR LEFT ---------- -->
+        <aside class="main-sidebar">
+
+            <section class="sidebar">
+
+                <!-- SIDEBAR USER -->
+                <div class="user-panel">
+                    <div class="pull-left image">
+                        <img src="image/ardilla.png" class="img-circle" alt="User Image">
+                    </div>
+                    <div class="pull-left info">
+                        <p>Administrador</p>
+                        <a href="#"><i class="fa fa-circle text-success"></i> Sesión</a>
+                    </div>
+                </div>
+                <!-- SIDEBAR USER -->
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">Menú</li>
+                    <!-- LINKS -->
+                    <li><a href="admin"><i class="fa fa-home"></i> <span>Inicio</span></a></li>
+                    <li><a href="usuarios"><i class="fa fa-building"></i> <span>Usuarios</span></a></li>
+                    <li class="treeview">
+                        <a href="#"><i class="fa fa-table"></i> <span>Catalogos</span>
+                              <span class="pull-right-container">
+                                  <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                        <ul class="treeview-menu">
+                            <li><a href="">Trabajadores</a></li>
+                            <li><a href="">Clientes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <!-- ---------- /	SIDEBAR LEFT ---------- -->
+
+
+        <!-- ---------- CONTENIDO ---------- -->
+        <div class="content-wrapper" id="contenido">
+
+            <style>
+                img {
+                    margin: 0 auto;
+                }
+            </style>
+
+            <!-- ENCABEZADO -->
+            <section class="content-header">
+                <h1>Panel Administración<small> &nbsp;  Usuarios</small></h1>
+                <ol class="breadcrumb">
+                    <li><a href="usuarios"><i class="fa fa-user-circle"></i> Usuarios</a></li>
+                    <!-- 	    <li class="active">Bienvenido</li> -->
+                </ol>
+            </section>
+
+            <!-- CONTENIDO PRINCIPAL -->
+            <section class="content container-fluid">
+                <div class="row">
+
+                    <!-- Tabla usuarios -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="box box-primary">
+                            <div class="box-header with-border">
+                                <h3 class="box-title"> <i class="fa fa-user-circle"></i> Gestión de Usuarios</h3>
+                            </div>
+
+                            <div class="box-body">
+                                <div class="row">
+                                    <div class="box-body">
+                                        <div id="example2_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+
+                                            <div class="row">
+                                                <div class="col-sm-1"></div>
+                                                <!-- Tabla -->
+                                                <div class="col-sm-10">
+
+                                                    <p id="consultaJSON"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Botones -->
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                                <button id="btnNuevo" type="button" class="btn btn-block btn-success btn-flat">Nuevo máquina
+                                               	</button>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                                <button type="button" class="btn btn-block btn-warning btn-flat">Editar máquina</button>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                                <button type="button" class="btn btn-block btn-danger btn-flat">Eliminar máquina</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                </div><br>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            </div>
+            <!-- ---------- /CONTENIDO ---------- -->
+
+            <!-- ---------- FOOTER ---------- -->
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    Panel de administración
+                </div>
+                <center><strong>Copyright &copy; 2017 <a href="index.html">ESV</a>.</strong>Todos los derechos reservados.</center>
+            </footer>
+            <!-- ---------- /FOOTER ---------- -->
+
+            <!-- Control Sidebar -->
+            <aside class="control-sidebar control-sidebar-dark">
+                <!-- Create the tabs -->
+                <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+                    <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+                    <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <!-- Home tab content -->
+                    <div class="tab-pane active" id="control-sidebar-home-tab">
+                        <h3 class="control-sidebar-heading">Actividad reciente</h3>
+
+                        <!-- /.control-sidebar-menu -->
+
+                        <h3 class="control-sidebar-heading">Progreso</h3>
+                        <ul class="control-sidebar-menu">
+                            <li>
+                                <a href="javascript:;">
+                                    <h4 class="control-sidebar-subheading">
+                                    Avance
+                                    <span class="pull-right-container">
+                      <span class="label label-danger pull-right">70%</span>
+                                    </span>
+                                </h4>
+
+                                    <div class="progress progress-xxs">
+                                        <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <!-- /.control-sidebar-menu -->
+
+                    </div>
+                    <!-- /.tab-pane -->
+                    <!-- Stats tab content -->
+                    <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div>
+                    <!-- /.tab-pane -->
+                    <!-- Settings tab content -->
+                    <div class="tab-pane" id="control-sidebar-settings-tab">
+                        <form method="post">
+                            <h3 class="control-sidebar-heading">General Settings</h3>
+
+                            <div class="form-group">
+                                <label class="control-sidebar-subheading">
+                                    Report panel usage
+                                    <input type="checkbox" class="pull-right" checked>
+                                </label>
+
+                                <p>
+                                    Some information about this general settings option
+                                </p>
+                            </div>
+                            <!-- /.form-group -->
+                        </form>
+                    </div>
+                    <!-- /.tab-pane -->
+                </div>
+            </aside>
+            <!-- /.control-sidebar -->
+            <div class="control-sidebar-bg"></div>
+        </div>
+
+        <!-- ---------- JS Scripts ---------- -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="dist/js/adminlte.min.js"></script>
+        <script src="modules/usuarios.js" charset="utf-8"></script>
+        <script>
+            $(document).ready(function() {
+                $("#contenido").hide();
+                $("#contenido").fadeIn();
+                console.log("¡ Welcome to ESV ! :)");
+            });
+        </script>
+</body>
+
+</html>

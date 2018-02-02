@@ -1,0 +1,165 @@
+@charset "ISO-8859-1";
+/* ---------- FONT APP ---------- */
+html {  font-size: 62.5% !important; }
+body {
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-size: 1.5em !important; /* currently ems cause chrome bug misinterpreting rems on body element */
+ 	line-height: 1.6 !important;
+  	font-weight: 400 !important;
+}
+
+
+/* ---------- NAVBAR STYLES ---------- */
+.navbar {
+    background-color: transparent !important;
+    background: transparent !important;
+    border-color: transparent !important;
+    opacity: 0.9 !important;
+    border: 0;
+    border-radius: 0;
+    height: .9px;
+}
+
+.navbar > .container > .navbar-header > a {
+    color: #4db6ac !important;
+}
+
+.navbar-inverse .navbar-nav>li > a {
+    color: #fff !important;
+    transition-duration: .5s;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #4db6ac !important;
+}
+
+
+/* ---------- BODY PAGE ---------- */
+body {
+	background: url('../image/wallE.jpeg') no-repeat center center fixed !important;
+/* 	background: #000 !important; */
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    height: 100% !important;
+}
+
+
+/* ---------- HEADERS ---------- */
+h1, h2, h3, h4, h5 {
+	text-align: center;
+}
+
+
+/* ---------- TEXT ---------- */
+.header-text {
+	margin-bottom: 100px !important;
+}
+
+.text-white {
+	color: #fff !important;
+}
+
+.text-grey {
+	color: #ccc !important;
+}
+
+.text-codenes {
+	color: #4db6ac !important;
+}
+
+.vertical {
+	margin-top: 70px;
+}
+
+
+/* ---------- FORM / INPUTS ---------- */
+.form {
+	border: 1px solid #ddd;
+	background-color: #fff;
+    border-radius: 1.0;
+}
+
+/* ICON FORM */
+.input-group-addon {
+	border-radius: 0px !important; 
+	background: #fff !important;
+}
+
+/* INPU FORM */
+.form-control {
+	border-radius: 0px !important; 
+}
+
+.form-control:active {
+	border: none!
+}
+
+.form-control:focus {
+  border-color: #4db6ac !important;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+
+/* ---------- IMG ---------- */
+img {
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+/* Mia4991astro25. */
+/* ---------- BUTTONS ---------- */
+.btn-transparency {
+	border-radius: 0px !important; 
+	background-color: transparent !important;
+    background: transparent !important;	
+    border-color: #fff !important;
+    color: #fff !important;
+    transition-duration: .5s;
+}
+.btn-transparency:hover {
+ 	border-color: #4db6ac !important;
+    color: #4db6ac !important;
+}
+
+.btn-transparency2 {
+	border-radius: 0px !important; 
+	background-color: transparent !important;
+    background: transparent !important;	
+    border-color: #616161 !important;
+    color: #616161 !important;
+    transition-duration: .5s;
+}
+.btn-transparency2:hover {
+	border-color: #4db6ac !important;
+    color: #4db6ac !important;
+}
+
+.buttons {
+	margin-bottom: 30px;
+}
+
+.btn-success {
+	border-radius: 0px !important; 
+}
+
+/*---------- COLUMNS PADDING ---------- */
+.col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    width: 100%;
+	padding-left: 25px !important;
+	padding-right: 25px !important;
+}
+
+
+/* ---------- WIDTH OF ELEMENT HR ---------- */
+hr {
+	width: 250px;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+	margin-top: 70px;
+}

@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+body {
+	background: url('../image/agua.jpeg') no-repeat center center fixed !important;
+/* 	background: #000 !important; */
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    height: 100% !important;
+}
+
+.text-white {
+	color: #fff !important;
+}
+
+img {
+	margin: 0 auto !important;
+}

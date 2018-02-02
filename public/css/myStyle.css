@@ -1,0 +1,85 @@
+@charset "ISO-8859-1";
+
+/* ---------- FONT APP ---------- */
+html {  font-size: 62.5% !important; }
+body {
+	font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	font-size: 1.5em !important; /* currently ems cause chrome bug misinterpreting rems on body element */
+ 	line-height: 1.6 !important;
+  	font-weight: 400 !important;
+}
+
+
+/* ---------- NAVBAR STYLES ---------- */
+.navbar {
+    background-color: transparent !important;
+    background: transparent !important;
+    border-color: transparent !important;
+    opacity: 0.9 !important;
+    border: 0;
+    border-radius: 0;
+    height: .9px;
+}
+
+.navbar > .container > .navbar-header > a {
+    color: #4db6ac !important;
+}
+
+.navbar-inverse .navbar-nav>li > a {
+    color: #fff !important;
+    transition-duration: .5s;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #4db6ac !important;
+}
+
+
+/* ---------- BODY PAGE ---------- */
+body {
+	background: url('../image/wall.jpg') no-repeat center center fixed !important;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    height: 100% !important;
+}
+
+/* ---------- HEADERS ---------- */
+h1, h2, h3, h4, h5 {
+	text-align: center;
+}
+
+/* ---------- TEXT WHITE ---------- */
+.text-white {
+	color: #fff !important;
+}
+
+/* ---------- BUTTON TRANSPARENCY ---------- */
+.btn-transparency {
+	border-radius: 0px !important; 
+	background-color: transparent !important;
+    background: transparent !important;	
+    border-color: #fff !important;
+    color: #fff !important;
+    transition-duration: .5s;
+}
+.btn-transparency:hover {
+ 	border-color: #4db6ac !important;
+    color: #4db6ac !important;
+}
+
+/* ---------- WIDTH OF ELEMENT HR ---------- */
+hr {
+	width: 250px;
+}
+
+.vertical {
+	margin-top: 100px;
+}
+  
+/* ---------- FOOTER ---------- */
+footer {
+	margin-top: 80px;
+}
+
